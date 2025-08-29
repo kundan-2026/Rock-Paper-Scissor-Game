@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <div id="check"></div>
+</body>
+<script>
+
+  let num = prompt("Enter your score: ");
+  let grade;
+  if (num >= 90 && num <= 100) {
+    console.log("Grade A");
+    grade = "A";
+  }
+  else if (num >= 70 && num <= 89) {
+    console.log("Grade B");
+    grade = "B";
+  }
+
+  else if (num >= 60 && num <= 69) {
+    console.log("Grade C");
+    grade = "C";
+  }
+
+  else if (num >= 50 && num <= 59) {
+    console.log("Grade D");
+    grade = "D";
+  }
+
+  else if (num >= 40 && num <= 49) {
+    console.log("Grade E");
+    grade = "E";
+  }
+
+  else {
+    console.log("Fail");
+    grade = "Fail";
+  }
+
+  let check = document.getElementById("check").innerHTML = "Your grade is " + grade + "."
+
+</script>
+
+</html>
